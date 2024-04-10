@@ -8,6 +8,7 @@ import { CatsService } from "./cats/cats.service";
 import config from "./configuration";
 import { User } from "./entities/User.entity";
 import { Cat } from "./entities/Cat.entity";
+import { AuthModule } from "./auth/auth.module";
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { Cat } from "./entities/Cat.entity";
     TypeOrmModule.forFeature([User, Cat]),
     CoreModule,
     CatsModule,
+    AuthModule,
   ],
   providers: [
     CatsService, 
