@@ -106,7 +106,7 @@ describe("CatsController", () => {
       jest.spyOn(catsService, "create").mockRejectedValue(expectedResult);
 
       await expect(controller.create(createCatDto)).rejects.toEqual(
-        expectedResult
+        expectedResult,
       );
       expect(catsService.create).toHaveBeenCalledWith(createCatDto);
 
@@ -208,7 +208,7 @@ describe("CatsController", () => {
         .mockRejectedValue(expectedResult);
 
       await expect(controller.deleteCatById(catId)).rejects.toEqual(
-        expectedResult
+        expectedResult,
       );
     });
   });
@@ -221,7 +221,7 @@ describe("CatsController", () => {
       jest.spyOn(catsService, "updateCatById").mockResolvedValue(updatedCat);
 
       expect(await controller.updateCatById(catId, updateCatDto)).toEqual(
-        updatedCat
+        updatedCat,
       );
     });
     it("should not update a cat if user is not authorized", async () => {
@@ -251,7 +251,7 @@ describe("CatsController", () => {
         .mockRejectedValue(expectedResult);
 
       await expect(
-        controller.updateCatById(catId, updateCatDto)
+        controller.updateCatById(catId, updateCatDto),
       ).rejects.toEqual(expectedResult);
     });
   });

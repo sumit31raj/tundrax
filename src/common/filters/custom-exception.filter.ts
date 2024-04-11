@@ -12,12 +12,12 @@ export class CustomExceptionFilter implements ExceptionFilter {
     const response = ctx.getResponse();
     const request = ctx.getRequest();
     let statusCode = 500;
-    let errorMessage=exception.message;
+    let errorMessage = exception.message;
 
     if (exception instanceof HttpException) {
-      statusCode = exception.getStatus()
-      const exceptionResp: any = exception.getResponse()
-      errorMessage = exceptionResp.message
+      statusCode = exception.getStatus();
+      const exceptionResp: any = exception.getResponse();
+      errorMessage = exceptionResp.message;
     }
 
     response.status(statusCode).json({

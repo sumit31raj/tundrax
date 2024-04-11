@@ -47,7 +47,7 @@ describe("UserService", () => {
     it("should throw NotFoundException if user not found", async () => {
       jest.spyOn(userRepository, "findOne").mockResolvedValue(null);
       await expect(service.markCatAsFavorite(1, 1)).rejects.toThrow(
-        NotFoundException
+        NotFoundException,
       );
     });
   });
@@ -69,7 +69,7 @@ describe("UserService", () => {
       jest.spyOn(userRepository, "findOne").mockResolvedValue(undefined);
 
       await expect(service.getUserFavoriteCats(1)).rejects.toThrow(
-        NotFoundException
+        NotFoundException,
       );
     });
   });

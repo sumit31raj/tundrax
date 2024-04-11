@@ -55,12 +55,12 @@ describe("UserController", () => {
       const request = { user: { id: 1, name: "John", roles: ["user"] } };
 
       await expect(
-        controller.markCatAsFavorite(invalidCatId, request)
+        controller.markCatAsFavorite(invalidCatId, request),
       ).rejects.toEqual(response);
 
       expect(userService.markCatAsFavorite).toHaveBeenCalledWith(
         request.user.id,
-        invalidCatId
+        invalidCatId,
       );
     });
 
@@ -78,12 +78,12 @@ describe("UserController", () => {
       const request = { user: { id: 1, name: "John", roles: ["user"] } };
 
       await expect(
-        controller.markCatAsFavorite(invalidCatId, request)
+        controller.markCatAsFavorite(invalidCatId, request),
       ).rejects.toEqual(response);
 
       expect(userService.markCatAsFavorite).toHaveBeenCalledWith(
         request.user.id,
-        invalidCatId
+        invalidCatId,
       );
     });
   });

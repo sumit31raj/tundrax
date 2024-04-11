@@ -10,7 +10,7 @@ Before you begin, ensure you have met the following requirements:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Tundrax-Dex/nestjs-assignment
+   git clone https://github.com/sumit31raj/tundrax.git
    ```
 
 2. **Navigate to the project directory:**
@@ -21,7 +21,7 @@ Before you begin, ensure you have met the following requirements:
 3. **Run the app using Docker:**   
    ```bash
     docker-compose build
-    docker compose-up
+    docker-compose up
    ```
 
 ## Test

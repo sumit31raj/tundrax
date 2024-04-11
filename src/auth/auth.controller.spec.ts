@@ -196,7 +196,7 @@ describe("AuthController", () => {
       jest.spyOn(authService, "registerAdminUser").mockRejectedValue(response);
 
       await expect(controller.registerAdminUser(user)).rejects.toEqual(
-        response
+        response,
       );
 
       expect(authService.registerAdminUser).toHaveBeenCalledWith(user);
@@ -217,7 +217,7 @@ describe("AuthController", () => {
       jest.spyOn(authService, "registerAdminUser").mockRejectedValue(response);
 
       await expect(controller.registerAdminUser(user)).rejects.toEqual(
-        response
+        response,
       );
 
       expect(authService.registerAdminUser).toHaveBeenCalledWith(user);
@@ -239,7 +239,7 @@ describe("AuthController", () => {
       jest.spyOn(authService, "registerAdminUser").mockRejectedValue(response);
 
       await expect(controller.registerAdminUser(user)).rejects.toEqual(
-        response
+        response,
       );
 
       expect(authService.registerAdminUser).toHaveBeenCalledWith(user);
