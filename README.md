@@ -15,7 +15,7 @@ Before you begin, ensure you have met the following requirements:
 
 2. **Navigate to the project directory:**
    ```bash
-   cd nestjs-assignment
+   cd tundrax
    ```
 
 3. **Run the app using Docker:**   
