@@ -27,6 +27,10 @@ Before you begin, ensure you have met the following requirements:
 ## Test
 
 ```bash
+
+# If port 5432 is already in use, run this command to free the port
+$ service postgresql stop
+
 # build command 
 $ docker-compose -f ./docker-compose-test.yml build
 
