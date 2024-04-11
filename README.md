@@ -39,7 +39,8 @@ $ docker-compose -f ./docker-compose-test.yml run e2e_test
 ```
 
 ## Postman Collection
-You can find a Postman collection file named tundrax-test-task.postman_collection.json in the project folder. You can import this file into Postman to access the API endpoints easily.
+- <a href="https://github.com/sumit31raj/tundrax/blob/main/tundrax-test-task.postman_collection.json" target="_blank" download="Tundrax.postman_collection.json">Tundrax Collection</a> file (`Right-Click -> Save As`). 
+<br/>
 
 ## Usage
 
