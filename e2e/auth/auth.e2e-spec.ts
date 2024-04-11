@@ -65,11 +65,12 @@ describe("validateUser", () => {
     const result = await supertest(app.getHttpServer())
       .post("/auth/register")
       .send(registerUserDto)
-      .expect(404);
+      .expect(400);
 
     expect(result.body).toEqual({
+      error: "Bad Request",
       message: `Email already exists`,
-      statusCode: 404,
+      statusCode: 400,
     });
   });
 });

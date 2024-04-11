@@ -1,5 +1,5 @@
 import {
-  HttpException,
+  BadRequestException,
   HttpStatus,
   Injectable,
   NotFoundException,
@@ -92,7 +92,7 @@ export class AuthService {
     });
 
     if (existingUser) {
-      throw new HttpException("Email already exists", HttpStatus.NOT_FOUND);
+      throw new BadRequestException("Email already exists");
     }
 
     // Hash the password
