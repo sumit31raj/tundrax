@@ -37,9 +37,8 @@ $ docker-compose -f ./docker-compose-test.yml run unit_test
 $ docker-compose -f ./docker-compose-test.yml run e2e_test
 
 ```
-
 ## Postman Collection
-- <a href="https://github.com/sumit31raj/tundrax/blob/main/tundrax-test-task.postman_collection.json" target="_blank" download="Tundrax.postman_collection.json">Tundrax Collection</a> file (`Right-Click -> Save As`). 
+- <a href="https://raw.githubusercontent.com/sumit31raj/tundrax/main/tundrax-test-task.postman_collection.json" target="_blank" download="Tundrax.postman_collection.json">Tundrax Collection</a> file (`Right-Click -> Save As`). 
 <br/>
 
 ## Usage
