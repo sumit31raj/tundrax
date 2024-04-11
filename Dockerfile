@@ -7,6 +7,9 @@ WORKDIR /usr/src/app
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
+# Copy .npmrc file to the working directory
+COPY .npmrc .npmrc
+
 # Install dependencies
 RUN npm install
 
